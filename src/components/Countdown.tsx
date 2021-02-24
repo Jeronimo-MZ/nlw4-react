@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from './../styles/components/Countdown.module.css'
-
 
 let countdownTimeout;
 
-export function Countdown () {
+export function Countdown ({initialMinutes=0.05}) {
+    const { startNewChallenge } = useContext(ChallengesContext);
 
-    const [time, setTime] = useState(0.05 * 60);
+
+    const [time, setTime] = useState(initialMinutes * 60);
     const [isActive, setIsActive] = useState(false);
     const [hasFinished, setHasFinished] = useState(false);
 
@@ -23,7 +25,7 @@ export function Countdown () {
     function resetCountDown() {
         setIsActive(false);
         clearTimeout(countdownTimeout);
-        setTime(0.05*60);
+        setTime(initialMinutes*60);
     }
 
     useEffect(() =>{
@@ -34,6 +36,7 @@ export function Countdown () {
         } else if (isActive && time <= 0) {
             setHasFinished(true);
             setIsActive(false);
+            startNewChallenge();
         }
     }, [isActive, time])
 
@@ -59,7 +62,7 @@ export function Countdown () {
                     className={styles.countdownButton}
                 >
                     Ciclo encerrado
-                    <img src="/icons/tick.png" alt="tick"/>
+                    <img src="/icons/tick.svg"/>
                 </button>
             ):
                 <>
@@ -70,6 +73,7 @@ export function Countdown () {
                             onClick={resetCountDown}
                         >
                             Abandonar ciclo
+                            <img src="icons/stop.svg"/>
                         </button>
                     ) : (
                         <button 
@@ -78,6 +82,7 @@ export function Countdown () {
                             onClick={startCountDown}
                         >
                             Iniciar um ciclo
+                            <img src="icons/play.svg"/>
                         </button>
                     )}
                 </>

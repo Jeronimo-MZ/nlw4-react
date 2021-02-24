@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: .5rem;
 
     border: 0;
     border-radius: 5px;
@@ -54,7 +55,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     
-    transition: background-color .2s;
+    transition: .2s;
 }
 
 .countdownButton:not(:disabled):hover {
@@ -78,8 +79,18 @@
     border-bottom: 4px solid var(--green);
 }
 
-.countdownButton:disabled img {
-    background-color: var(--green);
-    width: 2rem;
-    height: 2rem;
+.countdownButton img {
+    height: 1rem;
+}
+
+.countdownButtonActive img {
+    filter: invert(1);
+}
+
+.countdownButtonActive:hover img {
+    filter: invert(0);
+}
+
+.countdownButton:disabled img{
+    height: 1.2rem;
 }
