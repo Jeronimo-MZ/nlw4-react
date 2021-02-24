@@ -11,9 +11,12 @@ export const ExperienceBar = () => {
             <span>0 xp</span>
             <div>
                 <div style={{width: `${percentToNextLevel}%`}} />
-                <span className={styles.currentExperience}
+                <span className={styles.currentExperienceContainer}
                     style={{left:  `${percentToNextLevel}%`}}
-                > {currentExperience} xp</span>
+                >
+                    <span className={styles.currentExperience}>  {currentExperience} xp</span>
+                    <span className={styles.currentExperienceTop}></span>
+                </span>
             </div>
             <span>{experienceToNextLevel} xp</span>
         </header>
