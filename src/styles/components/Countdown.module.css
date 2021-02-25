@@ -56,6 +56,7 @@
     font-weight: 600;
     
     transition: .2s;
+    cursor: pointer;
 }
 
 .countdownButton:not(:disabled):hover {
