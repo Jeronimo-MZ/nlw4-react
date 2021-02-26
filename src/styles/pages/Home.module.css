@@ -16,9 +16,14 @@
     align-content: center;
     
 }
+@media (max-width: 1180px) {
+    .container {
+        padding-left: 6rem;
+    }
+}
 
-@media (max-width: 990px) {
-
+@media (max-width: 1040px) {
+    
     .container section {
         display: flex;
         flex-direction: column;
@@ -26,11 +31,16 @@
         align-items: center;
         gap: 5rem;
     }
-
+    
     .container section > div {
         width: 70%;
         align-self: center;
         justify-self: center;
     }
-
+    
+}
+@media (max-width: 770px) {
+    .container {
+        padding-left: 5rem;
+    }
 }
