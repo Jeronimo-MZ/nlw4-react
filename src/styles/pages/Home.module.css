@@ -1,10 +1,11 @@
 .container {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 992px;
     margin: 0 auto;
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
+    gap: 3rem;
 }
 
 .container section {
@@ -14,4 +15,22 @@
     gap: 6.25rem; 
     align-content: center;
     
+}
+
+@media (max-width: 990px) {
+
+    .container section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .container section > div {
+        width: 70%;
+        align-self: center;
+        justify-self: center;
+    }
+
 }

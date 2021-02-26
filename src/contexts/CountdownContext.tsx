@@ -14,12 +14,10 @@ interface CountdownProviderProps {
     children: ReactNode;
 }
 
-
-
 export const CountdownContext = createContext({} as CountdownContextData);
 
 let countdownTimeout: NodeJS.Timeout;
-const initialMinutes = 25;
+const initialMinutes = 0.05;
 
 export function CountdownProvider( {children}: CountdownProviderProps ) {
     const { startNewChallenge } = useContext(ChallengesContext);
