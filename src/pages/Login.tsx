@@ -5,6 +5,9 @@ import styles from './../styles/pages/Login.module.css'
 const Login  = () => {
     return ( 
     <div className={styles.container}>
+        <Head>
+            <title>Login | moveit</title>
+        </Head>
         <img src="Simbolo.svg" alt=""/>
         <div>
             <img src="/Logo_Login.svg" alt="Move it logo"/>
