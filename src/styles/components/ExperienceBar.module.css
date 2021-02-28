@@ -1,6 +1,7 @@
 .experienceBar {
     display: flex;
     align-items: center;
+    position: relative;
 
 }
 
@@ -24,6 +25,7 @@
     height: 100%;
     border-radius: 4px;
     background: var(--green);
+
     /* Animation */
     animation: animate 2s;
 }
@@ -31,8 +33,8 @@
 .experienceBar:hover .currentExperienceContainer{
     visibility: visible;
     opacity: 1;
-    top: 18px;
-
+    top: 28px;
+    
 }
 
 .currentExperienceContainer {
@@ -43,11 +45,14 @@
     padding: 0.5rem .7rem;
     background-color: var(--green);
     border-radius: 4px;
-
+    
     /* hide */
     visibility: hidden;
     opacity: 0;
     transition: .3s;
+
+    /* Animation */
+    animation: animate2 2.8s;
 }
 
 span span.currentExperience {
@@ -71,10 +76,27 @@ span span.currentExperienceTop {
 }
 
 @keyframes animate {
-    0% {
+    from {
         left: -100%;
     }
-    100% {
+    to {
         left: 0;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        transform: translateX(-500%);
+        top: 28px;
+        /* show */
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50%);
+        top: 28px;
+        /* hide */
+        visibility: hidden;
+        opacity: 0;
     }
 }

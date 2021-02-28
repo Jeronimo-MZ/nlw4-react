@@ -11,13 +11,13 @@ export const ExperienceBar = () => {
             <span>0 xp</span>
             <div>
                 <div style={{width: `${percentToNextLevel}%`}} />
-                <span className={styles.currentExperienceContainer}
-                    style={{left:  `${percentToNextLevel}%`}}
-                >
-                    <span className={styles.currentExperience}>  {currentExperience} xp</span>
-                    <span className={styles.currentExperienceTop}></span>
-                </span>
             </div>
+            <span className={styles.currentExperienceContainer}
+                style={{left:  `${percentToNextLevel}%`}}
+            >
+                <span className={styles.currentExperience}>  {currentExperience} xp</span>
+                <span className={styles.currentExperienceTop}></span>                
+            </span>
             <span>{experienceToNextLevel} xp</span>
         </header>
      );
