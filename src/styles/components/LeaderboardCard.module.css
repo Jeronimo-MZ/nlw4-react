@@ -1,0 +1,60 @@
+.cardContainer {
+    width: 100%;
+    margin-top: 4px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+
+.cardContainer td {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    white-space: nowrap;
+}
+.cardContainer td:first-child {
+    border-radius: 4px 0 0 4px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-right: 4px solid var(--background);
+    text-align: center;
+    padding: 0;
+}
+.cardContainer td:nth-child(2) {
+    padding-left: 1.5rem;
+}
+.cardContainer td:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.cardContainer td span {
+    color: var(--blue);
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.user > img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+.user > div {
+    margin-right: 1.5rem;
+}
+
+.user > div strong {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.user div p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.user div p img {
+    margin-right: 0.5rem;
+}

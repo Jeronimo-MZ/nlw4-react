@@ -8,9 +8,9 @@ const Leaderboard = () => {
     const user = {
         name:'Jerónimo Matavel',
         imageUrl: 'https://github.com/Jeronimo-MZ.png',
-        level: 1,
-        experience: 0,
-        challengesCompleted: 0,
+        level: 100,
+        experience: 1000000,
+        challengesCompleted: 100,
     }
     return (
         <>  
@@ -18,21 +18,37 @@ const Leaderboard = () => {
                 <title>Leaderboard | move.it</title>
             </Head>
             <Sidebar/>
-            <div className={styles.Container}>
+            <div className={styles.container}>
                 <h1>Leaderboard</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Posição</th>
-                            <th>Usuário</th>
-                            <th>Desafios</th>
-                            <th>Experiência</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <LeaderboardCard rank={1} user={user}/>
-                    </tbody>
-                </table>
+
+                <div className={styles.tableContainer}>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Usuário</th>
+                                <th>Desafios</th>
+                                <th>Experiência</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <LeaderboardCard rank={1} user={user}/>
+                            <LeaderboardCard rank={2} user={user}/>
+                            <LeaderboardCard rank={3} user={user}/>
+                            <LeaderboardCard rank={4} user={user}/>
+                            <LeaderboardCard rank={5} user={user}/>
+                            <LeaderboardCard rank={6} user={user}/>
+                            <LeaderboardCard rank={7} user={user}/>
+                            <LeaderboardCard rank={8} user={user}/>
+                            <LeaderboardCard rank={9} user={user}/>
+                            <LeaderboardCard rank={10} user={user}/>
+                            <LeaderboardCard rank={11} user={user}/>
+                            <LeaderboardCard rank={12} user={user}/>
+                            <LeaderboardCard rank={13} user={user}/>
+                            <LeaderboardCard rank={14} user={user}/>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </>
     );

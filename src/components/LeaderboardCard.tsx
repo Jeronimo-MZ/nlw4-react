@@ -1,3 +1,4 @@
+import styles from './../styles/components/LeaderboardCard.module.css';
 interface LeaderboardCardProps {
     rank: Number,
     user: {
@@ -10,16 +11,18 @@ interface LeaderboardCardProps {
 }
 export const LeaderboardCard = ({rank, user}:LeaderboardCardProps) => {
     return (
-        <tr>
-            <td>{rank}</td>
-            <td>
+        <tr className={styles.cardContainer}>
+            <td className={styles.rank}>{rank}</td>
+            <td className={styles.user}>
                 <img src={ user.imageUrl } alt={ user.name } />
-                { user.name }
-                <p><img src="/icons/level.svg" alt="level"/> Level { user.level }</p>
+                <div>
+                    <strong>{ user.name }</strong>
+                    <p><img src="/icons/level.svg" alt="level"/> Level { user.level }</p>
+                </div>
 
             </td>
-            <td>{ user.challengesCompleted }</td>
-            <td>{ user.experience }</td>
+            <td className={styles.challengesCompleted}><span>{ user.challengesCompleted }</span> Completos</td>
+            <td className={styles.experience}><span>{ user.experience }</span> xp</td>
         </tr>
     )
 }

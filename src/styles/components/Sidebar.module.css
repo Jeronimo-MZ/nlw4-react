@@ -4,6 +4,7 @@
     top: 0;
     bottom: 0;
     width: 5rem;
+    height: 100%;
     padding: 2rem 0;
     background-color: var(--white);
     display: flex;
