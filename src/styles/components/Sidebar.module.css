@@ -31,9 +31,10 @@
 .icons svg{
     stroke: var(--text);
     opacity: 0.5;
-    cursor: not-allowed;
-    padding: .5rem 1.5rem;
+    cursor: pointer;
+    padding: .5rem 1.2rem;
     width: 100%;
+    border-left: 3px solid transparent;
     
 }
 
