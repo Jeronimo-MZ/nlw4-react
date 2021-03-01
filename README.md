@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align='center'>
+    <img src='./public/Logo_Login.svg'>
+</h1>
+<h1>
+    <img src='./public/move_it.gif'>
+</h1>
 
-## Getting Started
+<p align='center'>
+<a href='https://nlw4-react.vercel.app/'>Veja a demonstração do Projecto</a>
+</p>
 
-First, run the development server:
+## 💻 Sobre o projeto
+
+O [move.it](https://nlw4-react.vercel.app/) é baseado na técnica de pomodoro e tem como objetivo ajudar quem fica na frente do computador por um longo período e acaba deixando de se exercitar, desafiando o usuário de uma forma divertida.
+
+O Projeto foi desenvolvido durante quarta edição da **NLW - Next Level Week** oferecida pela [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/).
+O NLW é uma experiência online com muito conteúdo prático e desafios que ficam disponiveis durante uma semana.
+
+
+## Como Iniciar o projecto na sua máquina
+
 
 ```bash
-npm run dev
-# or
-yarn dev
+    # Primeiro, clone o repositório para sua máquina
+    $ git clone git@github.com:Jeronimo-MZ/nlw4-react.git
+    
+    # entre no directório do projecto
+    $ cd nlw4-react
+
+    # instale todas as dependências
+    $ yarn add
+
+    # inicie o projecto no servidor local
+    $ yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+abra [http://localhost:3000](http://localhost:3000) no seu navegador para acessar o projecto
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🚀 Tecnologias utilizadas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+O projecto foi desenvolvido usando as seguintes tecnologias:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [ReactJS](https://reactjs.org/)
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Yarn](https://yarnpkg.com/)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 
-## Learn More
+## 🚀 Deploy
 
-To learn more about Next.js, take a look at the following resources:
+O deploy do projecto foi feito na [Vercel](https://vercel.com/) e pode ser encontrado [neste link](https://nlw4-react.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🦸 Autor 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<a href="https://github.com/Jeronimo-MZ">
+ <img style="border-radius: 50%;" src="https://github.com/Jeronimo-MZ.png" width="100px;" alt=""/>
+ <br />
+ <b>Jerónimo Matavel</b></a> <a href="https://www.linkedin.com/in/jeronimo-matavel/" title="Jerónimo Matavel">🚀</a>
+ <br />
 
-## Deploy on Vercel
+ [![Linkedin Badge](https://img.shields.io/badge/-Jerónimo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jeronimo-matavel/)](https://www.linkedin.com/in/jeronimo-matavel/) 
+[![Gmail Badge](https://img.shields.io/badge/-mataveljeronimo@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mataveljeronimo@gmail.com)](mailto:mataveljeronimo@gmail.com)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 Licença
+
+Este projeto esta sob a licença [MIT](./LICENSE). Consulte  a [LICENÇA](./LICENSE) para detalhes.
+
+Feito com ❤️ por Jerónimo Matavel 👋🏽 [Entre em contato!](https://www.linkedin.com/in/jeronimo-matavel/)
