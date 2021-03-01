@@ -1,5 +1,5 @@
 <h1 align='center'>
-    <img src='./public/Logo_Login.svg'>
+    <img src='./public/logo-full.svg'>
 </h1>
 <h1>
     <img src='./public/move_it.gif'>
