@@ -28,7 +28,7 @@ O NLW é uma experiência online com muito conteúdo prático e desafios que fic
     $ cd nlw4-react
 
     # instale todas as dependências
-    $ yarn add
+    $ yarn
 
     # inicie o projecto no servidor local
     $ yarn dev
